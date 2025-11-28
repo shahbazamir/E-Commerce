@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Cuts & Beauty Studio - Your One-Stop Beauty & Grooming Destination</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-inter">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-playfair font-bold text-gray-900">Luxe Cuts & Beauty Studio</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-gray-900 hover:text-pink-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</a>
+                        <a href="services.html" class="text-gray-900 hover:text-pink-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Services</a>
+                        <a href="#testimonials" class="text-gray-900 hover:text-pink-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Reviews</a>
+                        <a href="#contact" class="text-gray-900 hover:text-pink-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contact</a>
+                        <button id="bookingBtn" class="bg-pink-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-pink-700 transition duration-300">Book Now</button>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-gray-900 hover:text-pink-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-gray-900 hover:text-pink-600">Home</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-900 hover:text-pink-600">Services</a>
+                <a href="#testimonials" class="block px-3 py-2 text-gray-900 hover:text-pink-600">Reviews</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-900 hover:text-pink-600">Contact</a>
+                <button id="mobileBookingBtn" class="block w-full text-left px-3 py-2 bg-pink-600 text-white rounded-md hover:bg-pink-700">Book Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen bg-gradient-to-r from-pink-50 to-purple-50 pt-16">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="relative z-10 flex items-center justify-center h-full">
+            <div class="text-center px-4 max-w-4xl mx-auto">
+                <h2 class="text-5xl md:text-7xl font-playfair font-bold text-gray-900 mb-6">
+                    Your One-Stop Beauty & Grooming Destination
+                </h2>
+                <p class="text-xl md:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                    Experience luxury and style at Austin's premier beauty salon and barbershop
+                </p>
+                <button id="heroBookingBtn" class="bg-pink-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-pink-700 transition duration-300 shadow-lg">
+                    Book Your Appointment
+                </button>
+            </div>
+        </div>
+        <!-- Salon Interior Image Placeholder -->
+        <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80')"></div>
+    </section>
+
+    <!-- Service Categories -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-playfair font-bold text-gray-900 mb-4">Our Services</h3>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Discover our comprehensive range of beauty and grooming services designed to make you look and feel your best
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Hair Services -->
+                <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-lg p-8 text-center hover:shadow-xl transition duration-300">
+                    <div class="bg-pink-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-cut text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-playfair font-semibold text-gray-900 mb-4">Hair Services</h4>
+                    <p class="text-gray-600 mb-6">
+                        From precision cuts to creative coloring, our expert stylists will transform your look with the latest techniques and trends.
+                    </p>
+                    <ul class="text-left text-gray-700 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-pink-600 mr-2"></i>Haircuts & Styling</li>
+                        <li><i class="fas fa-check text-pink-600 mr-2"></i>Color & Highlights</li>
+                        <li><i class="fas fa-check text-pink-600 mr-2"></i>Hair Treatments</li>
+                        <li><i class="fas fa-check text-pink-600 mr-2"></i>Special Occasion Styling</li>
+                    </ul>
+                    <a href="services.html#hair" class="text-pink-600 font-semibold hover:text-pink-700">View Hair Services →</a>
+                </div>
+
+                <!-- Beauty Treatments -->
+                <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-lg p-8 text-center hover:shadow-xl transition duration-300">
+                    <div class="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-spa text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-playfair font-semibold text-gray-900 mb-4">Beauty Treatments</h4>
+                    <p class="text-gray-600 mb-6">
+                        Pamper yourself with our luxurious beauty treatments designed to enhance your natural radiance and boost confidence.
+                    </p>
+                    <ul class="text-left text-gray-700 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Facial Treatments</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Manicure & Pedicure</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Eyebrow & Lash Services</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Waxing Services</li>
+                    </ul>
+                    <a href="services.html#beauty" class="text-purple-600 font-semibold hover:text-purple-700">View Beauty Services →</a>
+                </div>
+
+                <!-- Signature Packages -->
+                <div class="bg-gradient-to-br from-indigo-50 to-pink-50 rounded-lg p-8 text-center hover:shadow-xl transition duration-300">
+                    <div class="bg-indigo-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-crown text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-playfair font-semibold text-gray-900 mb-4">Signature Packages</h4>
+                    <p class="text-gray-600 mb-6">
+                        Indulge in our curated beauty packages that combine multiple services for the ultimate luxury experience.
+                    </p>
+                    <ul class="text-left text-gray-700 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-indigo-600 mr-2"></i>Bridal Packages</li>
+                        <li><i class="fas fa-check text-indigo-600 mr-2"></i>Date Night Ready</li>
+                        <li><i class="fas fa-check text-indigo-600 mr-2"></i>Full Makeover</li>
+                        <li><i class="fas fa-check text-indigo-600 mr-2"></i>Mother's Day Special</li>
+                    </ul>
+                    <a href="services.html#packages" class="text-indigo-600 font-semibold hover:text-indigo-700">View Packages →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-playfair font-bold text-gray-900 mb-4">What Our Clients Say</h3>
+                <p class="text-xl text-gray-600">Don't just take our word for it - hear from our satisfied customers</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "Absolutely love this place! The staff is incredibly talented and the atmosphere is so relaxing. My hair has never looked better!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-pink-600 font-semibold">SR</span>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-gray-900">Sarah Rodriguez</h5>
+                            <p class="text-gray-500 text-sm">Regular Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "The bridal package was perfect for my wedding day! Every detail was taken care of and I felt like a princess. Thank you Luxe Cuts!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-purple-600 font-semibold">MJ</span>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-gray-900">Maria Johnson</h5>
+                            <p class="text-gray-500 text-sm">Bridal Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "Professional, friendly, and skilled stylists. The salon is beautiful and clean. I wouldn't go anywhere else!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-indigo-600 font-semibold">DT</span>
+                        </div>
+                        <div>
+                            <h5 class="font-semibold text-gray-900">David Thompson</h5>
+                            <p class="text-gray-500 text-sm">Loyal Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-playfair font-bold text-gray-900 mb-4">Visit Us Today</h3>
+                <p class="text-xl text-gray-600">Conveniently located in the heart of Austin</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div class="flex items-start">
+                        <div class="bg-pink-100 text-pink-600 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-2">Address</h4>
+                            <p class="text-gray-600">2847 South Lamar Boulevard<br>Austin, TX 78704</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-pink-100 text-pink-600 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-2">Phone</h4>
+                            <p class="text-gray-600">(512) 555-LUXE (5893)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-pink-100 text-pink-600 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-2">Email</h4>
+                            <p class="text-gray-600">hello@luxecutsbeauty.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-pink-100 text-pink-600 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-2">Hours</h4>
+                            <div class="text-gray-600 space-y-1">
+                                <p>Monday - Tuesday: 10AM - 7PM</p>
+                                <p>Wednesday - Friday: 9AM - 8PM</p>
+                                <p>Saturday: 8AM - 6PM</p>
+                                <p>Sunday: 11AM - 5PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Booking Form -->
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h4 class="text-2xl font-playfair font-bold text-gray-900 mb-6">Quick Booking</h4>
+                    <form id="bookingForm" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                            <input type="tel" id="phone" name="phone" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Service</label>
+                            <select id="service" name="service" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500">
+                                <option value="">Select a service</option>
+                                <option value="haircut">Haircut & Styling</option>
+                                <option value="color">Hair Color</option>
+                                <option value="facial">Facial Treatment</option>
+                                <option value="manicure">Manicure/Pedicure</option>
+                                <option value="package">Signature Package</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message (Optional)</label>
+                            <textarea id="message" name="message" rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Any special requests or questions..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-pink-600 text-white py-3 rounded-md font-semibold hover:bg-pink-700 transition duration-300">
+                            Request Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-playfair font-bold mb-4">Luxe Cuts & Beauty Studio</h3>
+                    <p class="text-gray-300 mb-4">Your premier destination for luxury beauty and grooming services in Austin, Texas.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-pink-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-pink-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-pink-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-pink-400"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#home" class="hover:text-pink-400">Home</a></li>
+                        <li><a href="services.html" class="hover:text-pink-400">Services & Pricing</a></li>
+                        <li><a href="#testimonials" class="hover:text-pink-400">Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-pink-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="text-gray-300 space-y-2">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>2847 S Lamar Blvd, Austin, TX</p>
+                        <p><i class="fas fa-phone mr-2"></i>(512) 555-LUXE</p>
+                        <p><i class="fas fa-envelope mr-2"></i>hello@luxecutsbeauty.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Luxe Cuts & Beauty Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
