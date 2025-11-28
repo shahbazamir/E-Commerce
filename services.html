@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Pricing - Luxe Cuts & Beauty Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-inter">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-playfair font-bold text-gray-900">Luxe Cuts & Beauty Studio</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-gray-900 hover:text-pink-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</a>
+                        <a href="services.html" class="text-pink-600 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="index.html#testimonials" class="text-gray-900 hover:text-pink-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Reviews</a>
+                        <a href="index.html#contact" class="text-gray-900 hover:text-pink-600 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contact</a>
+                        <button id="bookingBtn" class="bg-pink-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-pink-700 transition duration-300">Book Now</button>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-gray-900 hover:text-pink-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-gray-900 hover:text-pink-600">Home</a>
+                <a href="services.html" class="block px-3 py-2 text-pink-600">Services</a>
+                <a href="index.html#testimonials" class="block px-3 py-2 text-gray-900 hover:text-pink-600">Reviews</a>
+                <a href="index.html#contact" class="block px-3 py-2 text-gray-900 hover:text-pink-600">Contact</a>
+                <button id="mobileBookingBtn" class="block w-full text-left px-3 py-2 bg-pink-600 text-white rounded-md hover:bg-pink-700">Book Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="bg-gradient-to-r from-pink-50 to-purple-50 pt-24 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-playfair font-bold text-gray-900 mb-6">
+                Services & Pricing
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Discover our comprehensive range of luxury beauty and grooming services, each crafted to enhance your natural beauty
+            </p>
+        </div>
+    </section>
+
+    <!-- Hair Services Section -->
+    <section id="hair" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="bg-pink-600 text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-cut text-3xl"></i>
+                </div>
+                <h2 class="text-4xl font-playfair font-bold text-gray-900 mb-4">Hair Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Transform your look with our expert styling and cutting services
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Haircuts & Styling -->
+                <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-playfair font-bold text-gray-900 mb-6">Haircuts & Styling</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Women's Cut & Style</h4>
+                                <p class="text-gray-600 text-sm">Precision cut with professional styling</p>
+                            </div>
+                            <span class="text-pink-600 font-bold">$65-85</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Men's Cut & Style</h4>
+                                <p class="text-gray-600 text-sm">Classic and modern cuts with styling</p>
+                            </div>
+                            <span class="text-pink-600 font-bold">$45-65</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Children's Cut (Under 12)</h4>
+                                <p class="text-gray-600 text-sm">Fun and comfortable cuts for kids</p>
+                            </div>
+                            <span class="text-pink-600 font-bold">$35</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Blowout & Styling</h4>
+                                <p class="text-gray-600 text-sm">Professional blowout with styling</p>
+                            </div>
+                            <span class="text-pink-600 font-bold">$45</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hair Color -->
+                <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-playfair font-bold text-gray-900 mb-6">Hair Color & Highlights</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Full Color</h4>
+                                <p class="text-gray-600 text-sm">Complete color transformation</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$95-150</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Partial Highlights</h4>
+                                <p class="text-gray-600 text-sm">Sectional highlighting for dimension</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$85-120</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Full Highlights</h4>
+                                <p class="text-gray-600 text-sm">Complete highlighting service</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$120-180</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Balayage/Ombre</h4>
+                                <p class="text-gray-600 text-sm">Hand-painted color technique</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$150-220</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hair Treatments -->
+                <div class="bg-gradient-to-br from-indigo-50 to-pink-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-playfair font-bold text-gray-900 mb-6">Hair Treatments</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Deep Conditioning Treatment</h4>
+                                <p class="text-gray-600 text-sm">Intensive moisture and repair</p>
+                            </div>
+                            <span class="text-indigo-600 font-bold">$35</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Keratin Treatment</h4>
+                                <p class="text-gray-600 text-sm">Smoothing and strengthening treatment</p>
+                            </div>
+                            <span class="text-indigo-600 font-bold">$200-300</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Scalp Treatment</h4>
+                                <p class="text-gray-600 text-sm">Therapeutic scalp care</p>
+                            </div>
+                            <span class="text-indigo-600 font-bold">$45</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Occasion -->
+                <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-playfair font-bold text-gray-900 mb-6">Special Occasion Styling</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Updo Styling</h4>
+                                <p class="text-gray-600 text-sm">Elegant updos for special events</p>
+                            </div>
+                            <span class="text-pink-600 font-bold">$75-95</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Bridal Hair</h4>
+                                <p class="text-gray-600 text-sm">Wedding day hair perfection</p>
+                            </div>
+                            <span class="text-pink-600 font-bold">$150-200</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Hair Extensions</h4>
+                                <p class="text-gray-600 text-sm">Length and volume enhancement</p>
+                            </div>
+                            <span class="text-pink-600 font-bold">$200+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beauty Treatments Section -->
+    <section id="beauty" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="bg-purple-600 text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-spa text-3xl"></i>
+                </div>
+                <h2 class="text-4xl font-playfair font-bold text-gray-900 mb-4">Beauty Treatments</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Pamper yourself with our luxurious beauty and wellness services
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Facial Treatments -->
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-playfair font-bold text-gray-900 mb-6">Facial Treatments</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Classic Facial</h4>
+                                <p class="text-gray-600 text-sm">Deep cleansing and hydrating facial</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$85</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Anti-Aging Facial</h4>
+                                <p class="text-gray-600 text-sm">Advanced treatment for mature skin</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$120</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Acne Treatment Facial</h4>
+                                <p class="text-gray-600 text-sm">Specialized care for problematic skin</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$95</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Hydrafacial</h4>
+                                <p class="text-gray-600 text-sm">Advanced hydrating treatment</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$150</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nail Services -->
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-playfair font-bold text-gray-900 mb-6">Manicure & Pedicure</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Classic Manicure</h4>
+                                <p class="text-gray-600 text-sm">Traditional nail care and polish</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$35</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Gel Manicure</h4>
+                                <p class="text-gray-600 text-sm">Long-lasting gel polish application</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$50</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Classic Pedicure</h4>
+                                <p class="text-gray-600 text-sm">Complete foot care and polish</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$45</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Luxury Spa Pedicure</h4>
+                                <p class="text-gray-600 text-sm">Premium pedicure with massage</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$65</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eyebrow & Lash Services -->
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-playfair font-bold text-gray-900 mb-6">Eyebrow & Lash Services</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Eyebrow Shaping</h4>
+                                <p class="text-gray-600 text-sm">Professional brow shaping and trim</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$25</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Eyebrow Tinting</h4>
+                                <p class="text-gray-600 text-sm">Color enhancement for fuller look</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$35</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Lash Extensions</h4>
+                                <p class="text-gray-600 text-sm">Individual lash extension application</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$120-180</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Lash Lift & Tint</h4>
+                                <p class="text-gray-600 text-sm">Natural lash enhancement</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$75</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Waxing Services -->
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-playfair font-bold text-gray-900 mb-6">Waxing Services</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Eyebrow Wax</h4>
+                                <p class="text-gray-600 text-sm">Precise eyebrow shaping</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$20</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Upper Lip Wax</h4>
+                                <p class="text-gray-600 text-sm">Quick and gentle hair removal</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$15</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Leg Wax (Full)</h4>
+                                <p class="text-gray-600 text-sm">Complete leg hair removal</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$65</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3">
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Brazilian Wax</h4>
+                                <p class="text-gray-600 text-sm">Complete intimate area waxing</p>
+                            </div>
+                            <span class="text-purple-600 font-bold">$75</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Packages Section -->
+    <section id="packages" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="bg-indigo-600 text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-crown text-3xl"></i>
+                </div>
+                <h2 class="text-4xl font-playfair font-bold text-gray-900 mb-4">Signature Packages</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Indulge in our curated beauty packages for the ultimate luxury experience
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Bridal Package -->
+                <div class="bg-gradient-to-br from-pink-100 to-purple-100 rounded-lg p-8 border-2 border-pink-200">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-heart text-4xl text-pink-600 mb-4"></i>
+                        <h3 class="text-3xl font-playfair font-bold text-gray-900">Bridal Package</h3>
+                        <p class="text-gray-600 mt-2">Perfect for your special day</p>
+                    </div>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-pink-600 mr-3"></i>
+                            <span>Bridal hair styling consultation & trial</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-pink-600 mr-3"></i>
+                            <span>Wedding day hair styling</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-pink-600 mr-3"></i>
+                            <span>Professional makeup application</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-pink-600 mr-3"></i>
+                            <span>Manicure & pedicure</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-pink-600 mr-3"></i>
+                            <span>Eyebrow shaping & tinting</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-3xl font-bold text-pink-600">$450</span>
+                        <p class="text-gray-600">Save $75 when booked as package</p>
+                    </div>
+                </div>
+
+                <!-- Date Night Ready -->
+                <div class="bg-gradient-to-br from-purple-100 to-indigo-100 rounded-lg p-8 border-2 border-purple-200">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-glass-cheers text-4xl text-purple-600 mb-4"></i>
+                        <h3 class="text-3xl font-playfair font-bold text-gray-900">Date Night Ready</h3>
+                        <p class="text-gray-600 mt-2">Look stunning for your night out</p>
+                    </div>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>Blowout & styling</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>Express facial treatment</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>Gel manicure</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>Eyebrow shaping</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>Light makeup touch-up</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-3xl font-bold text-purple-600">$185</span>
+                        <p class="text-gray-600">Save $40 when booked as package</p>
+                    </div>
+                </div>
+
+                <!-- Full Makeover -->
+                <div class="bg-gradient-to-br from-indigo-100 to-pink-100 rounded-lg p-8 border-2 border-indigo-200">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-magic text-4xl text-indigo-600 mb-4"></i>
+                        <h3 class="text-3xl font-playfair font-bold text-gray-900">Full Makeover</h3>
+                        <p class="text-gray-600 mt-2">Complete transformation experience</p>
+                    </div>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-indigo-600 mr-3"></i>
+                            <span>Cut, color & style consultation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-indigo-600 mr-3"></i>
+                            <span>Full hair color or highlights</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-indigo-600 mr-3"></i>
+                            <span>Precision haircut & style</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-indigo-600 mr-3"></i>
+                            <span>Anti-aging facial</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-indigo-600 mr-3"></i>
+                            <span>Eyebrow & lash enhancement</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-3xl font-bold text-indigo-600">$325</span>
+                        <p class="text-gray-600">Save $95 when booked as package</p>
+                    </div>
+                </div>
+
+                <!-- Mother's Day Special -->
+                <div class="bg-gradient-to-br from-pink-100 to-purple-100 rounded-lg p-8 border-2 border-pink-200">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-gift text-4xl text-pink-600 mb-4"></i>
+                        <h3 class="text-3xl font-playfair font-bold text-gray-900">Mother's Day Special</h3>
+                        <p class="text-gray-600 mt-2">Celebrate mom with luxury pampering</p>
+                    </div>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-pink-600 mr-3"></i>
+                            <span>Relaxing facial treatment</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-pink-600 mr-3"></i>
+                            <span>Luxury spa pedicure</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-pink-600 mr-3"></i>
+                            <span>Gel manicure</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-pink-600 mr-3"></i>
+                            <span>Scalp massage treatment</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-pink-600 mr-3"></i>
+                            <span>Complimentary refreshments</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-3xl font-bold text-pink-600">$225</span>
+                        <p class="text-gray-600">Save $55 when booked as package</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-pink-600 to-purple-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-playfair font-bold mb-6">Ready to Book Your Appointment?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Experience the luxury and professionalism of Luxe Cuts & Beauty Studio. Book your appointment today!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button id="ctaBookingBtn" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition duration-300">
+                    Book Now
+                </button>
+                <a href="tel:5125555893" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-purple-600 transition duration-300">
+                    Call (512) 555-LUXE
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-playfair font-bold mb-4">Luxe Cuts & Beauty Studio</h3>
+                    <p class="text-gray-300 mb-4">Your premier destination for luxury beauty and grooming services in Austin, Texas.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-pink-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-pink-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-pink-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-pink-400"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html" class="hover:text-pink-400">Home</a></li>
+                        <li><a href="services.html" class="hover:text-pink-400">Services & Pricing</a></li>
+                        <li><a href="index.html#testimonials" class="hover:text-pink-400">Reviews</a></li>
+                        <li><a href="index.html#contact" class="hover:text-pink-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="text-gray-300 space-y-2">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>2847 S Lamar Blvd, Austin, TX</p>
+                        <p><i class="fas fa-phone mr-2"></i>(512) 555-LUXE</p>
+                        <p><i class="fas fa-envelope mr-2"></i>hello@luxecutsbeauty.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Luxe Cuts & Beauty Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
